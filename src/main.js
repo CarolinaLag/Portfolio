@@ -1,4 +1,5 @@
 window.addEventListener("load", function () {
+  
     
 TweenLite.set('.introline, .bigline',{x:'-103%'})
 
@@ -15,6 +16,10 @@ TweenMax.to("#arrowRight", 1, {
   });
 
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
 
 
 
