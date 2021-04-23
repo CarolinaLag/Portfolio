@@ -1,0 +1,106 @@
+@import "./partials/reset";
+@import "./partials/mixins";
+
+body {
+  font-family: "Mina", sans-serif;
+  background-color: rgba(252, 245, 233, 0.952);
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    .socialMediaIcons {
+      margin: 50px 50px 0;
+      .socialIcon {
+        text-decoration: none;
+        margin: 10px;
+        .fab {
+          font-size: 20px;
+          color: rgb(194, 162, 121);
+          border: 3px solid rgb(194, 162, 121);
+          border-radius: 50%;
+          padding: 10px;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    .imageSection {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      .profileImg {
+        border: 2px solid rgba(252, 245, 233, 0.952);
+        width: 160px;
+        height: 160px;
+        box-shadow: 4px 3px 6px 1px #888888;
+        border-radius: 50%;
+        @include desktop {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+    .myNameSection {
+      margin: 0 0 0 10%;
+      border-left: 6px solid black;
+      overflow: hidden;
+      .bigline {
+        font-size: 10vw;
+        color: rgb(194, 162, 121);
+        margin: 0 0 0 14px;
+        line-height: 1.2;
+        letter-spacing: -2px;
+        @include desktop {
+          font-size: 5vw;
+        }
+      }
+      .introline {
+        font-size: 5vw;
+        margin: 0 0 0 20px;
+        font-weight: bold;
+        @include desktop {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+  .mainContent {
+    padding-top:60px;
+    @include desktop {
+        padding-top:60px; 
+    }
+    .description {
+      font-size: 1.5rem;
+      max-width: 60rem;
+      text-align: left;
+      background: black;
+      color: white;
+      padding: 20px;
+    margin: 20px;
+      @include desktop {
+        font-size: 2rem;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 30px;
+        margin-left: 77px;
+      }
+      .mainText {
+          .far {
+              padding-right:20px;
+          }
+          .contactMail {
+              color:rgb(194, 162, 121);
+              transition: transform 250ms;
+              font-size: 1.2rem;
+              &:hover {
+                  transform: translateY(-10px);
+              }
+              @include desktop {
+                  font-size: 2rem;
+              }
+          }
+      }
+    }
+  }
+}
