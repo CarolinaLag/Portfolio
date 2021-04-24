@@ -87,7 +87,7 @@ body {
             font-size: 1.8rem; } }
       body .mainContent .description .mainText .contactMail {
         color: #c2a279;
-        font-size: 0.9rem; }
+        font-size: 0.8rem; }
         body .mainContent .description .mainText .contactMail:hover {
           color: rgba(81, 238, 225, 0.959); }
         @media screen and (min-width: 1024px) {
