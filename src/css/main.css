@@ -61,6 +61,7 @@ body {
     padding-top: 60px; }
     @media screen and (min-width: 1024px) {
       body .mainContent {
+        display: flex;
         padding-top: 60px; } }
     body .mainContent .description {
       font-size: 1.5rem;
@@ -81,32 +82,24 @@ body {
         padding-right: 20px; }
       body .mainContent .description .mainText .contactMail {
         color: #c2a279;
-        transition: transform 250ms;
         font-size: 1.2rem; }
         body .mainContent .description .mainText .contactMail:hover {
-          transform: translateY(-10px); }
+          color: rgba(81, 238, 225, 0.959); }
         @media screen and (min-width: 1024px) {
           body .mainContent .description .mainText .contactMail {
             font-size: 2rem; } }
     body .mainContent .techSkillsSection {
-      text-align: center;
-      width: 63%;
-      margin-left: 77px;
-      border-bottom: 5px solid white;
-      overflow: hidden;
-      animation: animate 2s linear forwards; }
+      text-align: left;
+      width: 100%;
+      padding-left: 50px; }
+      @media screen and (min-width: 1024px) {
+        body .mainContent .techSkillsSection {
+          text-align: center;
+          padding: 0; } }
+      body .mainContent .techSkillsSection .techlist {
+        list-style-type: none; }
 
-@keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px; }
-  30% {
-    width: 50px;
-    height: 0px; }
-  60% {
-    width: 50px;
-    height: 80px; } }
-  body footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 1.2rem; }
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem; }

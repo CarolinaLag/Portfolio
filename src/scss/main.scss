@@ -68,6 +68,7 @@ body {
   .mainContent {
     padding-top: 60px;
     @include desktop {
+      display: flex;
       padding-top: 60px;
     }
     .description {
@@ -91,10 +92,9 @@ body {
         }
         .contactMail {
           color: rgb(194, 162, 121);
-          transition: transform 250ms;
           font-size: 1.2rem;
           &:hover {
-            transform: translateY(-10px);
+            color: rgba(81, 238, 225, 0.959);
           }
           @include desktop {
             font-size: 2rem;
@@ -103,33 +103,21 @@ body {
       }
     }
     .techSkillsSection {
-      text-align: center;
-      width: 63%;
-      margin-left: 77px;
-      border-bottom: 5px solid white;
-      overflow: hidden;
-      animation: animate 2s linear forwards;
-      .techSkillsText {
-        @keyframes animate {
-          0% {
-              width: 0px;
-              height: 0px;
-          }
-          30% {
-              width: 50px;
-              height: 0px;
-          }
-          60% {
-              width: 50px;
-              height: 80px;
-          }
+      text-align: left;
+      width: 100%;
+      padding-left: 50px;
+      @include desktop {
+        text-align: center;
+        padding: 0;
       }
-      }
+     .techlist {
+      list-style-type: none;
+     }
     }
   }
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 1.2rem;
-  }
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
 }
