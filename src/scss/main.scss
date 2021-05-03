@@ -24,6 +24,9 @@ body {
           }
         }
       }
+      .currentDateTimeSection {
+        padding: 15px 0 0 0;
+      }
     }
     .imageSection {
       display: flex;
@@ -125,23 +128,36 @@ body {
     }
   }
 }
-footer {
+.footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 20px;
   font-size: 1.2rem;
-  .socialIcon {
-    text-decoration: none;
-    margin: 10px;
-    .fab {
-      font-size: 20px;
-      color: rgb(194, 162, 121);
-      border: 3px solid rgb(194, 162, 121);
-      border-radius: 50%;
-      padding: 10px;
-      transition: all 0.2s ease-in-out;
-      &:hover {
-        transform: scale(1.2);
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .socialMediaFooter {
+    padding: 10px;
+    .socialIcon {
+      text-decoration: none;
+      margin: 10px;
+      .fab {
+        font-size: 20px;
+        color: rgb(194, 162, 121);
+        border: 3px solid rgb(194, 162, 121);
+        border-radius: 50%;
+        padding: 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
+  }
+  .currentYearSection {
+    padding: 15px;
   }
 }

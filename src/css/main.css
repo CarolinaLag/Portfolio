@@ -23,6 +23,8 @@ body {
           transition: all 0.2s ease-in-out; }
           body .top-section .socialMediaIcons .socialIcon .fab:hover {
             transform: scale(1.2); }
+      body .top-section .socialMediaIcons .currentDateTimeSection {
+        padding: 15px 0 0 0; }
     body .top-section .imageSection {
       display: flex;
       justify-content: center;
@@ -107,19 +109,30 @@ body {
       body .mainContent .techSkillsSection .techlist {
         list-style-type: none; }
 
-footer {
+.footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 20px;
   font-size: 1.2rem; }
-  footer .socialIcon {
-    text-decoration: none;
-    margin: 10px; }
-    footer .socialIcon .fab {
-      font-size: 20px;
-      color: #c2a279;
-      border: 3px solid #c2a279;
-      border-radius: 50%;
-      padding: 10px;
-      transition: all 0.2s ease-in-out; }
-      footer .socialIcon .fab:hover {
-        transform: scale(1.2); }
+  @media screen and (min-width: 1024px) {
+    .footer {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; } }
+  .footer .socialMediaFooter {
+    padding: 10px; }
+    .footer .socialMediaFooter .socialIcon {
+      text-decoration: none;
+      margin: 10px; }
+      .footer .socialMediaFooter .socialIcon .fab {
+        font-size: 20px;
+        color: #c2a279;
+        border: 3px solid #c2a279;
+        border-radius: 50%;
+        padding: 10px;
+        transition: all 0.2s ease-in-out; }
+        .footer .socialMediaFooter .socialIcon .fab:hover {
+          transform: scale(1.2); }
+  .footer .currentYearSection {
+    padding: 15px; }

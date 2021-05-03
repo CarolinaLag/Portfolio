@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carolina's Portfolio</title>
-    <link rel="shortcut icon" type="image/ico" href="./public/my-logo.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./public/my-logo.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -35,7 +35,11 @@
           target="_blank"
           ><i class="fab fa-github fa-5x"></i
         ></a>
+        <div class="currentDateTimeSection">
+          <p id="dateAndTime"></p>
+        </div>
       </div>
+
       <div class="imageSection">
         <img
           class="profileImg"
@@ -100,20 +104,22 @@
         </div>
       </article>
     </section>
-    <footer>
-      &copy; <span id="year"></span>
-      <a
-        class="socialIcon"
-        href="https://www.linkedin.com/in/carolina-lagerberg-6761552a/"
-        target="_blank"
-        ><i class="fab fa-linkedin fa-5x"></i
-      ></a>
-      <a
-        class="socialIcon"
-        href="https://github.com/CarolinaLag"
-        target="_blank"
-        ><i class="fab fa-github fa-5x"></i
-      ></a>
+    <footer class="footer">
+      <div class="socialMediaFooter">
+        <a
+          class="socialIcon"
+          href="https://www.linkedin.com/in/carolina-lagerberg-6761552a/"
+          target="_blank"
+          ><i class="fab fa-linkedin fa-5x"></i
+        ></a>
+        <a
+          class="socialIcon"
+          href="https://github.com/CarolinaLag"
+          target="_blank"
+          ><i class="fab fa-github fa-5x"></i
+        ></a>
+      </div>
+      <div class="currentYearSection">&copy; <span id="year"></span></div>
     </footer>
 
     <script src="src/main.js"></script>
