@@ -2,7 +2,7 @@
 
 _A portfolio App built as a resume about myself, my skills and contact information_
 
-## Demo
+## Live
 
 https://carolinalagerberg.netlify.app/
 
