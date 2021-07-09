@@ -5,6 +5,18 @@ window.addEventListener("load", function () {
     .to(".bigline", 1, { x: "0%" })
     .to(".introline", 1, { x: "0%" }, "+=0.3");
 
+  gsap.from(".description", {
+    opacity: 0,
+    x: "-20%",
+    delay: 1,
+  });
+
+  gsap.from(".techSkillsSection", {
+    opacity: 0,
+    x: "20%",
+    delay: 1,
+  });
+
   TweenMax.to("#arrowRight", 1, {
     x: 20,
     repeat: 10,
@@ -74,33 +86,34 @@ TxtRotate.prototype.tick = function () {
 };
 
 function getDateTime() {
-  let now     = new Date(); 
-  let year    = now.getFullYear();
-  let month   = now.getMonth()+1; 
-  let day     = now.getDate();
-  let hour    = now.getHours();
-  let minute  = now.getMinutes();
-  let second  = now.getSeconds(); 
-  if(month.toString().length == 1) {
-       month = '0'+month;
+  let now = new Date();
+  let year = now.getFullYear();
+  let month = now.getMonth() + 1;
+  let day = now.getDate();
+  let hour = now.getHours();
+  let minute = now.getMinutes();
+  let second = now.getSeconds();
+  if (month.toString().length == 1) {
+    month = "0" + month;
   }
-  if(day.toString().length == 1) {
-       day = '0'+day;
-  }   
-  if(hour.toString().length == 1) {
-       hour = '0'+hour;
+  if (day.toString().length == 1) {
+    day = "0" + day;
   }
-  if(minute.toString().length == 1) {
-       minute = '0'+minute;
+  if (hour.toString().length == 1) {
+    hour = "0" + hour;
   }
-  if(second.toString().length == 1) {
-       second = '0'+second;
-  }   
-  let dateTime = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second;   
-   return dateTime;
+  if (minute.toString().length == 1) {
+    minute = "0" + minute;
+  }
+  if (second.toString().length == 1) {
+    second = "0" + second;
+  }
+  let dateTime =
+    year + "/" + month + "/" + day + " " + hour + ":" + minute + ":" + second;
+  return dateTime;
 }
 
-setInterval( () => {
+setInterval(() => {
   currentTime = getDateTime();
   document.getElementById("dateAndTime").innerHTML = currentTime;
 }, 1000);
